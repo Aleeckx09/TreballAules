@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -76,17 +75,42 @@ a {
     color: #6a1b9a;
     text-decoration: none;
 }
+.col1 {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+  }
+  
+  .col1 img {
+      max-width:90%;
+      padding: 5%;
+  }
+  .col2 {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+  }
+  
+  .col2 img {
+      max-width:90%;
+      padding: 5%;
+  }
+  
+  /* Estil del peu... */
+  
+  
+  /* Punt de ruptura en 620px per a pantalles menudes... */
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .col1 {
+      width: 100%;
+    }
+  }
 
 a:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 768px) {
-    .courses-container {
-        flex-direction: column;
-    }
 
-    .course {
-        flex: 1 0 auto;
-        max-width: 100%;
     }
 }
